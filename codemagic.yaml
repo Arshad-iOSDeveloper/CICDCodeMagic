@@ -6,9 +6,9 @@ workflows:
 scripts:
   - name: Build the .app
     script: |
-      # build using workspace
+      # build using project
       xcodebuild build \
-        -workspace "CICDCodeMagic.xcodeproj" \
+        -project "CICDCodeMagic.xcodeproj" \
         -scheme "CICDCodeMagic" \
         CODE_SIGN_IDENTITY="" \
         CODE_SIGNING_REQUIRED=NO \
